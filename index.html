@@ -1,205 +1,40 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Dog World</title>
-        <style>
-            header{
-                background-color:teal;
-                color:white;
-                height:100px;
-                font-size:40px;
-            }
-            h1:hover{
-                color:yellow;
-            }
-            nav{
-                background-color: grey;
-                height: 550px;
-                width:200px;
-                float:left;
-                text-align:center;
-            }
-            button{
-                width:160px;
-                font-size:40px;
-                margin-top:10px;
-            }
-            section{
-                height:500px;
-                width:1150px;
-                margin-left:200px;
-            }
-            * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: -320;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-img{
-    height:550px;
-}
-footer{
-    background-color: teal;
-    color:white;
-    text-align:center;
-    margin-top:50px;
-    height:30px;
-}
-
-.yellow{
-    color: yellow;
-     background-color:orange ;
-}
-.yellow:hover{
-   color: yellow;
-   background-color:white;
-}
- .orange{
-    color:orange;
-     background-color:green ;
- }
- .orange:hover{
-    color:orange;
-     background-color:whitesmoke;
- }
- .green{
-    color:green;
-     background-color:blue;
- }
- .green:hover{
-    color: yellow;
-     background-color:orange ;
-}
-.blue{
-    color: yellow;
-     background-color:orange ;
-}
- .blue:hover{
-    color:blue;
-    background-color: aqua;
-}
-  .ad{
-    height:100px ;
-    width:100px ;
-    text-align: left;
-  }
-  a{
-    text-align: left;
-    float:left;
-  }
-  h1{
-    text-align: center;
-  }
-
-        </style>
-    </head>
-    <body>
-        <header>
-            <a href="index.html"><img class="ad" src="dog4.png"></a>
-            <h1>Dog World</h1>
-        </header>
-        <nav>
-            <button class="yellow" onclick=window.location.href="about.html">About</button><br /><br />
-            <button class="orange" onclick=window.location.href="health.html">Health</button><br /><br />
-            <button class="green"  onclick=window.location.href="breed.html">Breed</button><br /><br />
-            <button class="blue"   onclick=window.location.href="training.html">Training</button><br /><br />
-        </nav>
-        <section>
-            <div class="slideshow-container">
-
-                <div class="mySlides fade">
-                  <div class="numbertext">1 / 3</div>
-                  <img src="11.jpg" style="width:1335px">
-                </div>
-                
-                <div class="mySlides fade">
-                  <div class="numbertext">2 / 3</div>
-                  <img src="22.jpg" style="width:1335px">
-                </div>
-                
-                <div class="mySlides fade">
-                  <div class="numbertext">3 / 3</div>
-                  <img src="33.jpg" style="width:1335px">
-                </div>
-                
+<head>
+    <meta charset="UTF-8" />
+    <title>Dog World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<a href="index.html"><img class="logo"src="dog4.png"></a>
+<h1>Dog World</h1>
+</header>
+<nav>
+    <button onclick=window.location.href="about.html">About</button><br>
+    <button onclick=window.location.href="health">Health</button><br>
+    <button onclick=window.location.href="breed">Breed</button><br>
+    <button onclick=window.location.href="training">Training</button><br>
+</nav>
+<section>
+    <div class="slideshow-container">
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="11.jpg">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="22.jpg">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="33.jpg">
+    </div>
+    
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                 <a class="next" onclick="plusSlides(1)">❯</a>
-                
                 </div>
                 <br>
-                
-                
-                
                 <script>
                     let slideIndex = 1;
                     showSlides(slideIndex);
@@ -227,12 +62,10 @@ footer{
                       slides[slideIndex-1].style.display = "block";  
                       dots[slideIndex-1].className += " active";
                     }
-                    </script> 
-        </section>
-        <footer>
-        
-        </footer>
-      <marquee direction="left">
+                    </script>
+</section>
+<footer>
+    <marquee direction="left">
         Dogs are not our whole life, but they make our lives whole." 
 
         "Happiness is a warm puppy." 
@@ -252,5 +85,6 @@ footer{
         
         "Every dog has his day, unless he loses his tail, then he has a weak-end."
       </marquee>
-      </body>
+</footer>
+</body>
 </html>
